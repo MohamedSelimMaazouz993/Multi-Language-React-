@@ -15,3 +15,7 @@
 ### 11) npm i react-scripts
 ### 12) npm i flag-icon-css
 ### And You Are Good To Go !
+
+# Commands For demo :
+### npm install
+### npm start
