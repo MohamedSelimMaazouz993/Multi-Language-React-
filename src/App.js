@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
+import ReactPlayer from 'react-player'
+import './App.css'
 
 const languages = [
   {
@@ -41,17 +43,23 @@ export default function App() {
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
   const { t } = useTranslation()
 
-  const releaseDate = new Date('2022-05-31')
+  const releaseDate = new Date('2022-04-26')
   const timeDifference = new Date() - releaseDate
   const number_of_days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
 
   useEffect(() => {
     console.log('Setting page stuff')
     document.body.dir = currentLanguage.dir || 'ltr'
-    document.title = t('app_title')
+    document.title = t('Multi Language React App')
   }, [currentLanguage, t])
 
   return (
+    <>
+
+
+
+
+    
     <div className="container">
       <div className="language-select">
         <div className="d-flex justify-content-end align-items-center language-select-root">
@@ -62,7 +70,7 @@ export default function App() {
               id="dropdownMenuButton1"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-            >
+              >
               <GlobeIcon />
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -72,7 +80,7 @@ export default function App() {
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
                   <a
-                    href="#"
+                    href="/"
                     className={classNames('dropdown-item', {
                       disabled: currentLanguageCode === code,
                     })}
@@ -85,7 +93,7 @@ export default function App() {
                       style={{
                         opacity: currentLanguageCode === code ? 0.5 : 1,
                       }}
-                    ></span>
+                      ></span>
                     {name}
                   </a>
                 </li>
@@ -98,6 +106,18 @@ export default function App() {
         <h1 className="font-weight-normal mb-3">{t('welcome_message')}</h1>
         <p>{t('days_since_release', { number_of_days })}</p>
       </div>
-    </div>
+  </div>
+   
+   <h2>My 1st Music Chatbot App with Rasa x </h2>
+  <div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url='https://www.youtube.com/watch?v=BtGHadEMWWw'
+          width='99%'
+          height='99%'
+          />
+      </div>
+          
+        </>
   )
 }
