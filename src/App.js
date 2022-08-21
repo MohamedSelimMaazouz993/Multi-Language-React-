@@ -108,8 +108,7 @@ export default function App() {
       </div>
   </div>
    
-   <h2>My 1st Music Chatbot App with Rasa x </h2>
-  <div className='player-wrapper'>
+     <div className='player-wrapper'>
         <ReactPlayer
           className='react-player'
           url='https://www.youtube.com/watch?v=BtGHadEMWWw'
