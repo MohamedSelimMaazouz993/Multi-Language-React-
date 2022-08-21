@@ -112,9 +112,8 @@ export default function App() {
         <ReactPlayer
           className='react-player'
           url='https://www.youtube.com/watch?v=BtGHadEMWWw'
-          width='99%'
-          height='99%'
-          />
+          width='200vh'
+          height='100vh'          />
       </div>
           
         </>
