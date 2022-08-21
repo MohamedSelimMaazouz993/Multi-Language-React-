@@ -19,3 +19,6 @@
 # Commands For demo :
 ### npm install
 ### npm start
+
+# Demo :
+https://slim-ml-react-app.herokuapp.com/
