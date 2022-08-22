@@ -34,19 +34,19 @@
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
-  margin-bottom: 0%;
+  margin-bottom: -12%;
 }
 
 .react-player {
   position: absolute;
-  top: 0;
-  left: 0;
+    top: 6px;
+    left: 67px;
 }
 
 
 
 div.lac  {
-  margin-top: 0%;
+  margin-top: 9%;
 }
 
 

@@ -112,8 +112,18 @@ export default function App() {
         <ReactPlayer
           className='react-player'
           url='https://www.youtube.com/watch?v=BtGHadEMWWw'
-          width='200vh'
-          height='100vh'          />
+          controls
+          config={{
+            youtube: {
+              playerVars: { showinfo: 1 }
+            },
+            facebook: {
+              appId: '12345'
+            }
+          }}
+          width='90%'
+          height='80%'
+        />          
       </div>
           
         </>
