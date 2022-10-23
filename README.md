@@ -17,6 +17,7 @@
 ### And You Are Good To Go !
 
 # Commands For demo :
+### npm-check-updates -u
 ### npm install
 ### npm start
 
