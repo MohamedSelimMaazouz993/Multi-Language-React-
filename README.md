@@ -22,4 +22,4 @@
 ### npm start
 
 # Demo :
-https://slim-ml-react-app.herokuapp.com/
+https://63b0d202e886cc02f6dd14cc--helpful-bavarois-3476f1.netlify.app/
